@@ -5,7 +5,8 @@
 import ScriptEnv
 import json
 
-f = open("C:\Users\dothe\Documents\Ansoft\patch.json")
+#### Check this line
+f = open(os.getcwd()+"/patch.json")
 j = json.load(f)
 
 ScriptEnv.Initialize("Ansoft.ElectronicsDesktop")
